@@ -1,7 +1,8 @@
-row = int(input("enter number of rows"))
-for i in range(row):
-    for j in range(11):
-        if i == 0 or i == row - 1 or j == 0 or j == 10:
+col = int(input("Enter rows: "))
+
+for i in range(col):
+    for j in range(col):
+        if i == 0 or j == 0 or j == col - 1 or i == col - 1:
             print("*", end="")
         else:
             print(" ", end="")
